@@ -1,4 +1,4 @@
-<% content_for :title, t('defaults.title') %>
+<% content_for(:title, t('defaults.title')) %>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>&region=VN&callback=initMap"></script>
 
 <div id="map"></div>
