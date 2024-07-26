@@ -1,2 +1,4 @@
-<h1>Maps#index</h1>
-<p>Find me in app/views/maps/index.html.erb</p>
+<% content_for :title, t('defaults.title') %>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>&region=VN&callback=initMap"></script>
+
+<div id="map"></div>
